@@ -17,6 +17,7 @@ torch.manual_seed(seed+5)
 
 data = pd.read_csv("../考核一(1)/data/gandou.csv")
 x = data.iloc[:,:-1]
+x = x.iloc[:,1:]
 y = data.iloc[:,-1]#分出标签
 
 #分割训练集 验证集 测试集
